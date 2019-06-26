@@ -6,15 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="facebook" />
-        <module name="cigna" />
-        <module name="Amazon" />
-        <module name="citybank" />
         <module name="Generic" />
-        <module name="cnn" />
+        <module name="CNN.com" />
+        <module name="facebook" />
+        <module name="citibank" />
+        <module name="Amazon" />
+      </profile>
+      <profile name="Annotation profile for Newbootcamp2" enabled="true">
+        <sourceOutputDir name="../Cigna/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../Cigna/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Cigna" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cigna" target="1.5" />
+      <module name="cnn" target="1.5" />
       <module name="cnn1" target="1.5" />
       <module name="Facebook" target="1.5" />
     </bytecodeTargetLevel>

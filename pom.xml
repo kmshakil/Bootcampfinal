@@ -12,9 +12,10 @@
         <module>Generic</module>
         <module>Amazon</module>
         <module>facebook</module>
-        <module>cnn</module>
-        <module>cigna</module>
-        <module>citybank</module>
+
+        <module>citibank</module>
+
+        <module>CNN.com</module>
     </modules>
     <dependencyManagement>
 

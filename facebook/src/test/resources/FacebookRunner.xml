@@ -12,7 +12,7 @@
     <parameter name="browser" value="Chrome"/>
 
 
-    <test name="amazon Test">
+    <test name="facebook Test">
         <classes>
             <class name="facebooktest.Facebooktest"/>
         </classes>

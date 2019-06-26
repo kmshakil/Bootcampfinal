@@ -15,6 +15,10 @@ public class AmazonHomepage extends CommonAPI {
    WebElement password;
    @FindBy(xpath = "//*[@id=\"signInSubmit\"]")
    WebElement signin;
+   @FindBy(xpath = "//*[@id=\"twotabsearchtextbox\"]")
+   WebElement searchbox;
+   //@FindBy(xpath = "//*[@id=\"twotabsearchtextbox\"]")
+   WebElement typetoy;
 
 
 
@@ -22,14 +26,16 @@ public class AmazonHomepage extends CommonAPI {
 
         orders.click();
     }
-    public void setgotosigninpage(String username, String pass){
+    public void setgotosigninpage(String username, String pass) {
         gotoaccount.click();
-       email.sendKeys(username);
-       password.sendKeys(pass);
-       signin.click();
-       sleepFor(5);
+        email.sendKeys(username);
+        password.sendKeys(pass);
+        signin.click();
+        sleepFor(5);
 
-
+    }
+    public void searchtoy(String toy){
+        searchbox.sendKeys(toy);
 
 
     }

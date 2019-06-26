@@ -16,7 +16,9 @@ public class Facebooktest extends CommonAPI {
     }
     @Test
     public void account(){
-        homePage.setSignin("kmshakil98", "kkkk");
+        homePage.setSignin("kmshakil98@gmail.com", "Kh");
+
         sleepFor(5);
+
     }
 }

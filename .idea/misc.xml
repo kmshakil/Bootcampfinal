@@ -10,6 +10,8 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/Facebook/pom.xml" />
+        <option value="$PROJECT_DIR$/cigna/pom.xml" />
+        <option value="$PROJECT_DIR$/cnn/pom.xml" />
         <option value="$PROJECT_DIR$/cnn1/pom.xml" />
       </set>
     </option>
