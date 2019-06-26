@@ -1,8 +1,11 @@
 package amazonhomepage;
 
 import base.CommonAPI;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 public class AmazonHomepage extends CommonAPI {
     @FindBy(xpath = "//*[@id=\"nav-link-accountList\"]/span[1]")
@@ -19,6 +22,25 @@ public class AmazonHomepage extends CommonAPI {
    WebElement searchbox;
    //@FindBy(xpath = "//*[@id=\"twotabsearchtextbox\"]")
    WebElement typetoy;
+   @FindBy(xpath = "//*[@id=\"searchDropdownBox\"]")
+   WebElement alldropdown ;
+   @FindBy(xpath = "//*[@id=\"nav-link-accountList\"]/span[2]")
+   WebElement testmousehover;
+   @FindBy(xpath = "//*[@id=\"nav-al-your-account\"]/a[1]/span")
+   WebElement testyouraccount;
+
+   public void setTestmousehover(){
+       Actions actions = new Actions(driver);
+       actions.moveToElement(testyouraccount);
+
+   }
+
+
+   public void dropdown(){
+       Select select = new Select(alldropdown);
+       alldropdown.click();
+       select.selectByIndex(4);
+   }
 
 
 

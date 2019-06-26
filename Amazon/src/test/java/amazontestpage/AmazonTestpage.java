@@ -37,11 +37,17 @@ public class AmazonTestpage extends CommonAPI {
         homepagee.setOrders();
         sleepFor(5);
     }
-    @Test
+    //@Test
     public void toy(){
         homepagee.searchtoy("toy");
         sleepFor(4);
     }
+    @Test
+    public void testdropdown(){
+        homepagee.dropdown();
+        sleepFor(5);
+    }
+
 
 
 }
