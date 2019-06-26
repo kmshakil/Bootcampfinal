@@ -2,7 +2,6 @@ package cnntestpage;
 
 import base.CommonAPI;
 import cnnhomepage.CnnHomePage;
-import org.omg.CORBA.PUBLIC_MEMBER;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
